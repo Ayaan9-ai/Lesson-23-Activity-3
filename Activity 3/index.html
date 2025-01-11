@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript real life example</title>
+    </head>
+
+    <body>
+        <h1>My Blog Post</h1>
+        <p> THis is an amazing blog post about javascript</p>
+
+        <button id="like">😎 Like</button>
+        <p id="count">Likes: 0</p>
+
+        <script>
+            var likes = 0;
+
+            const likeButton = document.getElementById
+            ("like");
+            const likeCount = document.getElementById
+            ("count");
+
+            likeButton.addEventListener("click", function () {
+                likes += 1;
+                likeCount.innerText = `Likes: ${likes}`;
+            });
+        </script>
+    </body>
+</html>
